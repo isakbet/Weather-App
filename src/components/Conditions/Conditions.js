@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Conditions.module.css'
+import classes from './Conditions.module.css';
 
 const conditions = (props) => {
     return (
@@ -8,7 +8,7 @@ const conditions = (props) => {
             {props.error && <small className={classes.Small}>Please enter a valid city.</small>}
 
             {props.loading && <div className={classes.Loader} />}
-            
+
             {props.responseObj.cod === 200 ?
                 <div>
                     <p><strong>{props.responseObj.name}</strong></p>

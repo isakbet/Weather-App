@@ -9,8 +9,7 @@ const Forecast = () => {
     let [unit, setUnit] = useState('imperial');
     let [responseObj, setResponseObj] = useState({});
     let [error, setError] = useState(false);
-    let [loading, setLoading] = useState(false);   
-
+    let [loading, setLoading] = useState(false);
 
 
     function getForecast(e) {
@@ -28,8 +27,6 @@ const Forecast = () => {
 
         const uriEncodedCity = encodeURIComponent(city);
 
-
-
         // weather data fetch function will go here
         fetch(`https://community-open-weather-map.p.rapidapi.com/weather?units=${unit}&q=${uriEncodedCity}`, {
             "method": "GET",
@@ -38,7 +35,7 @@ const Forecast = () => {
                 "x-rapidapi-key": "cbd9be7746msh922bcfc5a5584b6p11a1f2jsn70aedb4ccd02"
             }
         })
-         .then(response => response.json())
+            .then(response => response.json())
             .then(response => {
                 if (response.cod !== 200) {
                     throw new Error();
@@ -57,9 +54,9 @@ const Forecast = () => {
     }
 
     return (
-       // JSX code will go here        
-       <div>
-        <h2>Find Current Weather Conditions</h2>
+        // JSX code will go here        
+        <div>
+            <h2>Find Current Weather Conditions</h2>
             <form onSubmit={getForecast}>
                 <input
                     type="text"
@@ -90,17 +87,17 @@ const Forecast = () => {
                     Celcius
                 </label>
                 <button className={classes.Button} type="submit">Get Forecast</button>
-            </form>       
-            
-                <Conditions
-                    responseObj={responseObj}
+            </form>
+
+            <Conditions
+                responseObj={responseObj}
                 error={error}
                 loading={loading}
-                />
-            </div>
+            />
+        </div>
 
-                
-   )
+
+    )
 }
 
 export default Forecast;
