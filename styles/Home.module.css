@@ -1,0 +1,159 @@
+.wrapper {
+  max-width: 1200px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(83, 89, 179, 0.37);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 20px;
+}
+
+.wrapperHide {
+  display: none;
+}
+
+.weatherWrapper {
+  padding: 30px;
+}
+
+.locationTitle {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.weatherDescription {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.statsWrapper {
+  background-color: rgb(247, 247, 247);
+  padding: 30px;
+  text-align: right;
+  border-radius: 0 30px 30px 0;
+}
+
+.titleAndSearch {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.statsBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.statsCard {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.statsCardContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.mainTemp {
+  font-size: 84px;
+}
+
+.searchInput {
+  margin-bottom: 20px;
+  height: 40px;
+  border: none;
+  padding: 0 10px;
+  color: #303030;
+  font-size: 20px;
+  text-align: right;
+  border-radius: 10px;
+  font-family: "Varela Round", sans-serif;
+  font-size: 18px;
+}
+
+.switchBox {
+  text-align: right;
+}
+
+.switch {
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline;
+}
+
+.errScr {
+  text-align: center;
+  height: 100vh;
+  max-width: 300px;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.errSearchInput {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  .statsWrapper {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    margin: 0 auto;
+    border-radius: 0;
+  }
+
+  .statsBox {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .titleAndSearch {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+
+  .searchInput {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 475px) {
+  .statsBox {
+    grid-template-columns: 1fr;
+  }
+
+  .statsCardContent {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .switchBox {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .switchBox {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
