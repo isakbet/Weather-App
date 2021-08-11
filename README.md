@@ -1,6 +1,6 @@
 # Weather App
 
-Check the current weather on any city on the planet. Switch between metric and imperial units.
+Check the current weather on any city on the planet. Switch between celsius and fahrenheit metric conversion units.
 
 ![Alt img](https://i.pinimg.com/originals/7c/8f/8d/7c8f8d6c1d31299983169c717250ee9c.png "WeatherApp")
 
