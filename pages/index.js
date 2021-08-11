@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import styles from "../styles/Home.module.css";
 import Image from "next/image";
 
-export default function Home() {
+function Home() {
   const [input, setInput] = useState("Stockholm");
   const [systemUsed, setSystemUsed] = useState("metric");
   const [weatherData, setWeatherData] = useState();
@@ -356,3 +356,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
