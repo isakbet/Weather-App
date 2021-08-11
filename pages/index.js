@@ -6,7 +6,7 @@ import { convertTime, ctoF, timeToAMPM } from "./services/converters";
 import { isPM } from "./services/utils";
 
 export default function Home() {
-  const [input, setInput] = useState("Riga");
+  const [input, setInput] = useState("Stockholm");
   const [systemUsed, setSystemUsed] = useState("metric");
   const [weatherData, setWeatherData] = useState();
 
