@@ -10,13 +10,13 @@ Check the current weather on any city on the planet. Switch between celsius and 
 
 2. Celsius vs Fahrenheit Metric Conversion
 
-3. Current local time and date
+3. Temperatures and humidity
 
-4. Temperatures and humidity
+4. Wind speed and direction
 
-5. Wind speed and direction
-
-6. Visibility and Air Pressure
+5. Visibility and Air Pressure
 
 
-# weather-app
+# Next work
+
+1. Current local time and date
