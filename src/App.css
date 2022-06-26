@@ -21,20 +21,23 @@ main {
   padding: 25px;
 }
 
-footer {
+.footer {
   padding: 2px;
   min-height: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: #EEEEEE;
+  background: #282c34;
+  color: white;
   font-size: small;
   text-align: center;
 }
 
-header {
-  padding: 25px;
+.footer a {
+  color: white; 
 }
 
 
-
+header {
+  padding: 25px;
+}
