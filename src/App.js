@@ -13,8 +13,8 @@ function App() {
       <main>
         <Forecast />
       </main>
-      <footer>
-        Page created by Yoseph Berhane
+      <footer className='footer'>
+         <p>&copy; 2022 - <a href="yoseph.dev">Yoseph Berhane</a>. All rights reserved.</p>       
       </footer>
     </div>
   );
