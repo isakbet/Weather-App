@@ -4,7 +4,7 @@
 
 A Weather App made with React :cloud:
 
-<img src = "./src/assets/desktop-preview.png" width = "500" height = "500" />
+<img src = "./src/assets/desktop-preview.png" width = "500" alt="App Preview" />
 
 </div>
 
