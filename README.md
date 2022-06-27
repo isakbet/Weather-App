@@ -33,6 +33,7 @@ You must create custom environment variables beginning with REACT_APP_. Changing
 example:
 ```
 REACT_APP_MAP_TOKEN=YOUR_TOKEN_HERE
+REACT_APP_YOUR_API_KEY_NAME=your_api_key HERE
 ```
 
 Then, you can access this variable with `process.env` object:
