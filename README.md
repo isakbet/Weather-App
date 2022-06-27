@@ -52,12 +52,6 @@ Environment variables are embedded into the build, meaning anyone can view them 
 - Get Weather Forecast from any city;
 - The Background Image changes by current user dateTime;
 
-<div align="center">
-
-<img width="200" src="./src/assets/blue.jpg"/>
- 
-<img width="200" src="./src/assets/green.jpg"/>
-
-<img width="200" src="./src/assets/orange.jpg"/>
-
-</div>
+![alt text](https://../src/assets/blue.jpg?raw=true)
+![alt text](https://../src/assets/green.jpg?raw=true)
+![alt text](https://../src/assets/orange.jpg?raw=true)
